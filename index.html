@@ -1,0 +1,1072 @@
+<title>Shinra Motori</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..900&family=Barlow:ital,wght@0,300;0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap">
+
+<style>
+/* ============================================================
+   SHINRA MOTORI — candidature Shinoda RP (Iwagakure)
+   DA : basalte et lave. Fond de roche refroidie, veines chaudes.
+   Un seul monde visuel assumé, sombre et rouge.
+   ============================================================ */
+
+:root{
+  --skin:url("data:image/png;base64,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");
+  --rock:#0B0807;
+  --rock-2:#120D0B;
+  --plate:#17100E;
+  --plate-2:#1F1512;
+  --edge:#38231D;
+  --edge-2:#7A5245;
+
+  --text:#F1E4DD;
+  --body:#C2ABA1;
+  --muted:#8E7468;
+
+  --lava:#E85A22;
+  --lava-hot:#FFA347;
+  --ember:#A82A16;
+  --gold:#CFA24C;
+
+  --measure:37rem;
+  --wide:76rem;
+
+  --s-0:clamp(1rem,.97rem + .17vw,1.08rem);
+  --s-1:clamp(1.15rem,1.06rem + .4vw,1.36rem);
+  --s-2:clamp(1.6rem,1.32rem + 1.1vw,2.35rem);
+  --s-3:clamp(2.1rem,1.6rem + 2vw,3.2rem);
+  --s-4:clamp(2.7rem,1.85rem + 3.9vw,5.4rem);
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:var(--rock);
+  color:var(--text);
+  font-family:"Barlow",system-ui,"Segoe UI",sans-serif;
+  font-size:var(--s-0);
+  font-weight:300;
+  line-height:1.76;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* roche : grain + chaleur diffuse */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(90% 55% at 12% 0%,rgba(232,90,34,.10),transparent 58%),
+    radial-gradient(70% 45% at 92% 22%,rgba(168,42,22,.09),transparent 60%),
+    radial-gradient(120% 80% at 50% 112%,rgba(255,120,50,.075),transparent 62%);
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:
+    repeating-linear-gradient(58deg,rgba(255,190,150,.018) 0 2px,transparent 2px 7px),
+    repeating-linear-gradient(-31deg,rgba(0,0,0,.35) 0 3px,transparent 3px 11px);
+}
+
+#embers{position:fixed;inset:0;z-index:1;pointer-events:none;}
+main,header,footer{position:relative;z-index:2;}
+
+::selection{background:rgba(232,90,34,.35);color:#FFF3EA;}
+a{color:inherit;}
+:focus-visible{outline:2px solid var(--lava-hot);outline-offset:3px;}
+
+h1,h2,h3,h4,.display{
+  font-family:"Fraunces","Iowan Old Style",Georgia,serif;
+  font-weight:700;line-height:1.1;letter-spacing:-.01em;
+  text-wrap:balance;margin:0;
+}
+
+.label{
+  font-family:"DM Mono",ui-monospace,monospace;
+  font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
+}
+
+/* ---------- veine de lave (progression) ---------- */
+#vein{position:fixed;left:0;top:0;bottom:0;width:3px;background:#1C110E;z-index:60;}
+#vein span{
+  position:absolute;top:0;left:0;right:0;height:0;
+  background:linear-gradient(180deg,var(--lava-hot),var(--lava) 55%,var(--ember));
+  box-shadow:0 0 14px rgba(232,90,34,.75),0 0 34px rgba(232,90,34,.35);
+}
+
+/* ---------- rail ---------- */
+#rail{position:fixed;right:1.9rem;top:50%;transform:translateY(-50%);z-index:50;
+  display:flex;flex-direction:column;gap:.9rem;opacity:0;transition:opacity .6s;}
+#rail.on{opacity:1;}
+#rail a{display:flex;align-items:center;justify-content:flex-end;gap:.65rem;text-decoration:none;}
+#rail .dot{width:10px;height:2px;background:var(--edge-2);flex:none;transition:background .3s,width .3s,box-shadow .3s;}
+#rail .tip{font-family:"DM Mono",monospace;font-size:.58rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--muted);opacity:0;transform:translateX(5px);
+  transition:opacity .3s,transform .3s;white-space:nowrap;}
+#rail a:hover .tip{opacity:1;transform:none;}
+#rail a.active .dot{background:var(--lava);width:20px;box-shadow:0 0 10px rgba(232,90,34,.8);}
+@media (max-width:1220px){#rail{display:none;}}
+
+/* ---------- structure ---------- */
+.wrap{width:min(100% - 2.5rem,var(--wide));margin-inline:auto;}
+.col{width:min(100% - 2.5rem,var(--measure));margin-inline:auto;}
+section{padding-block:clamp(4rem,8vw,7.5rem);}
+.band{border-top:1px solid var(--edge);}
+
+.sec-head{
+  display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:clamp(1rem,3vw,2.5rem);
+  align-items:end;border-bottom:1px solid var(--edge);padding-bottom:1.2rem;margin-bottom:3rem;
+}
+.sec-head .num{
+  font-family:"Fraunces",serif;font-weight:900;font-size:3.4rem;line-height:.78;
+  color:var(--edge-2);font-variant-numeric:tabular-nums;
+}
+.sec-head h2{font-size:var(--s-2);}
+.sec-head .label{display:block;margin-bottom:.55rem;}
+@media (max-width:700px){
+  .sec-head{grid-template-columns:1fr;gap:.8rem;}
+  .sec-head .num{font-size:2.2rem;}
+}
+
+/* ---------- HERO ---------- */
+#hero{min-height:100svh;display:flex;align-items:center;padding-block:5rem 3rem;position:relative;overflow:hidden;}
+.hero-in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(2rem,5vw,5rem);align-items:center;}
+@media (max-width:900px){.hero-in{grid-template-columns:1fr;}.hero-fig{display:none;}}
+
+h1.name{font-size:var(--s-4);font-weight:900;line-height:.9;letter-spacing:-.03em;}
+h1.name .a{display:block;color:#FFF0E6;text-shadow:0 0 44px rgba(232,90,34,.35);}
+h1.name .b{
+  display:block;
+  background:linear-gradient(96deg,var(--lava-hot),var(--lava) 42%,var(--ember));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+
+.crack{position:relative;height:2px;margin:1.9rem 0 1.6rem;background:#241512;overflow:hidden;}
+.crack::after{
+  content:"";position:absolute;inset:0;transform-origin:left;
+  background:linear-gradient(90deg,var(--lava-hot),var(--lava) 40%,transparent);
+  box-shadow:0 0 16px rgba(232,90,34,.6);
+  animation:split 1.5s cubic-bezier(.16,1,.3,1) .25s both;
+}
+@keyframes split{from{transform:scaleX(0);}to{transform:scaleX(1);}}
+
+.hero-sub{max-width:35rem;color:var(--body);font-size:var(--s-1);line-height:1.62;}
+.hero-sub b{color:var(--text);font-weight:600;}
+
+.hero-meta{margin-top:2.1rem;display:flex;flex-wrap:wrap;gap:.5rem;}
+.chip{font-family:"DM Mono",monospace;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:.42rem .8rem;border:1px solid var(--edge);color:var(--body);background:var(--plate);}
+.chip.l{border-color:var(--lava);color:var(--lava-hot);}
+.chip.o{border-color:#5A4522;color:var(--gold);}
+
+.hero-fig{width:clamp(170px,22vw,270px);aspect-ratio:241/549;
+  filter:drop-shadow(0 26px 36px rgba(0,0,0,.75)) drop-shadow(0 0 30px rgba(232,90,34,.18));
+  animation:heat 9s ease-in-out infinite;}
+@keyframes heat{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+.fig{background-image:var(--skin);background-repeat:no-repeat;background-position:center bottom;
+  background-size:contain;image-rendering:pixelated;aspect-ratio:241/549;}
+
+/* ---------- blocs ---------- */
+.grid-2{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:start;}
+@media (max-width:840px){.grid-2{grid-template-columns:1fr;}}
+.lede{font-size:var(--s-1);color:var(--body);line-height:1.7;}
+
+.plate{border:1px solid var(--edge);background:var(--plate);padding:1.6rem 1.45rem;
+  box-shadow:inset 0 1px 0 rgba(255,160,100,.09);}
+.plate h3{font-size:1rem;margin-bottom:1.2rem;color:var(--lava-hot);}
+.plate dl{margin:0;display:grid;gap:1rem;}
+.plate dt{font-family:"DM Mono",monospace;font-size:.59rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.plate dd{margin:.3rem 0 0;font-family:"DM Mono",monospace;font-size:.92rem;color:var(--text);}
+
+.id-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge);}
+.id-cell{background:var(--plate);padding:1.45rem 1.3rem;transition:background .3s;
+  box-shadow:inset 0 1px 0 rgba(255,160,100,.06);}
+.id-cell:hover{background:var(--plate-2);}
+.id-cell dt{font-family:"DM Mono",monospace;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.id-cell dd{margin:.62rem 0 0;font-family:"Fraunces",serif;font-weight:700;font-size:1.2rem;color:var(--text);line-height:1.3;}
+.id-cell dd small{display:block;font-family:"Barlow",sans-serif;font-weight:300;font-size:.83rem;color:var(--muted);margin-top:.45rem;line-height:1.55;letter-spacing:0;}
+.id-cell.l dd{color:var(--lava-hot);}
+.id-cell.o dd{color:var(--gold);}
+
+.toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));border-top:1px solid var(--edge);}
+.toc a{display:flex;align-items:baseline;gap:1rem;padding:1.05rem .3rem;border-bottom:1px solid var(--edge);
+  text-decoration:none;transition:padding-left .3s,background .3s;}
+.toc a:hover{padding-left:.9rem;background:var(--plate);}
+.toc .n{font-family:"DM Mono",monospace;font-size:.66rem;color:var(--edge-2);width:2.3rem;flex:none;}
+.toc .t{font-family:"Fraunces",serif;font-weight:600;font-size:1rem;color:var(--body);}
+.toc a:hover .t{color:var(--lava-hot);}
+
+/* ---------- chapitres ---------- */
+.chapter{margin-bottom:clamp(3.5rem,7vw,5.5rem);}
+.chapter:last-child{margin-bottom:0;}
+.ch-head{margin-bottom:1.9rem;}
+.ch-head .ord{
+  font-family:"Fraunces",serif;font-weight:900;font-size:2.6rem;line-height:.8;
+  background:linear-gradient(180deg,var(--lava-hot),var(--ember));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  display:block;margin-bottom:.7rem;
+}
+.ch-head h3{font-size:var(--s-2);}
+.chapter p{margin:0 0 1.3rem;}
+.chapter p:last-child{margin-bottom:0;}
+.chapter strong{font-weight:600;color:var(--text);}
+.chapter em{font-style:italic;color:var(--body);}
+
+blockquote{margin:2rem 0;padding:1.4rem 0 1.4rem 1.6rem;border-left:2px solid var(--lava);
+  font-family:"Fraunces",serif;font-weight:600;font-size:1.1rem;color:var(--text);line-height:1.5;}
+blockquote cite{display:block;margin-top:.85rem;font-family:"DM Mono",monospace;font-style:normal;
+  font-weight:400;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);}
+
+/* ---------- yôton ---------- */
+#yoton{background:linear-gradient(180deg,rgba(168,42,22,.10),transparent 55%),var(--rock-2);}
+.arts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge);}
+.art{background:var(--plate);padding:1.75rem 1.55rem;box-shadow:inset 0 1px 0 rgba(255,160,100,.08);}
+.art h4{font-size:1.3rem;margin-bottom:.2rem;}
+.art .sub{display:block;font-family:"DM Mono",monospace;font-size:.58rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:1.1rem;}
+.art p{margin:0 0 .85rem;font-size:.95rem;color:var(--body);line-height:1.7;}
+.art p:last-child{margin-bottom:0;}
+.art ul{margin:.2rem 0 0;padding-left:1.1rem;color:var(--body);font-size:.94rem;line-height:1.7;}
+.art li{margin-bottom:.4rem;}
+.art.hot h4{color:var(--lava-hot);}
+.art.cold h4{color:#AE7A64;}
+
+.creed{border-left:2px solid var(--ember);padding-left:1.4rem;margin-top:2.5rem;max-width:44rem;
+  font-family:"Fraunces",serif;font-weight:600;font-size:1.08rem;color:var(--body);line-height:1.55;}
+.creed span{display:block;margin-top:.8rem;font-family:"DM Mono",monospace;font-weight:400;
+  font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);}
+
+/* ---------- objectifs ---------- */
+.horizons{display:grid;gap:2.5rem;}
+.horizon{display:grid;grid-template-columns:12rem minmax(0,1fr);gap:2rem;padding-top:1.5rem;border-top:1px solid var(--edge);}
+@media (max-width:760px){.horizon{grid-template-columns:1fr;gap:1rem;}}
+.horizon h3{font-size:1.12rem;color:var(--lava-hot);position:sticky;top:2rem;align-self:start;}
+.horizon h3 span{display:block;margin-top:.5rem;font-family:"DM Mono",monospace;font-weight:400;
+  font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.goals{list-style:none;margin:0;padding:0;display:grid;gap:1.45rem;}
+.goals li{display:grid;grid-template-columns:1.3rem minmax(0,1fr);gap:.85rem;align-items:start;}
+.goals .mk{margin-top:.72rem;width:10px;height:2px;background:var(--edge-2);transition:background .3s,width .3s,box-shadow .3s;}
+.goals li:hover .mk{background:var(--lava);width:16px;box-shadow:0 0 8px rgba(232,90,34,.7);}
+.goals b{display:block;font-family:"Fraunces",serif;font-weight:700;font-size:1.04rem;margin-bottom:.28rem;}
+.goals .desc{color:var(--muted);font-size:.95rem;line-height:1.7;}
+
+/* ---------- caractères ---------- */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(2rem,5vw,4rem);align-items:start;}
+.trait p{margin:0 0 1.2rem;color:var(--body);}
+.trait p:last-child{margin-bottom:0;}
+.trait strong{color:var(--text);font-weight:600;}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.5rem;}
+.tag{font-family:"DM Mono",monospace;font-size:.6rem;letter-spacing:.11em;text-transform:uppercase;
+  border:1px solid var(--edge);padding:.3rem .58rem;color:var(--muted);background:var(--plate);}
+
+.fig-card{border:1px solid var(--edge);background:var(--plate);padding:2rem 1.5rem 1.3rem;
+  display:flex;flex-direction:column;align-items:center;gap:1.2rem;box-shadow:inset 0 1px 0 rgba(255,160,100,.09);}
+.fig-card .fig{width:min(100%,225px);filter:drop-shadow(0 16px 24px rgba(0,0,0,.65));}
+.fig-card .cap{font-family:"DM Mono",monospace;font-size:.58rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--muted);text-align:center;line-height:1.9;}
+.fig-card .cap b{color:var(--lava-hot);font-weight:500;}
+
+.portrait{border:1px solid var(--edge);background:var(--plate);padding:1.6rem 1.5rem;
+  box-shadow:inset 0 1px 0 rgba(255,160,100,.09);}
+.portrait p{margin:0 0 1.05rem;color:var(--body);}
+.portrait p:last-child{margin-bottom:0;}
+.portrait strong{color:var(--text);font-weight:600;}
+
+.vitals{margin-top:1.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge);}
+.vitals div{background:var(--plate);padding:.85rem .95rem;}
+.vitals dt{font-family:"DM Mono",monospace;font-size:.55rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);}
+.vitals dd{margin:.35rem 0 0;font-family:"DM Mono",monospace;font-size:.87rem;color:var(--text);font-variant-numeric:tabular-nums;}
+
+.aptitudes{margin-top:clamp(2.5rem,5vw,3.5rem);}
+.bars{display:grid;gap:1.15rem 2.6rem;margin-top:1.3rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+.bar .top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  font-family:"DM Mono",monospace;font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;}
+.bar .top .n{color:var(--body);}
+.bar .top .g{color:var(--muted);}
+.track{margin-top:.45rem;height:3px;background:#2A1A15;position:relative;overflow:hidden;}
+.fill{position:absolute;inset:0 auto 0 0;width:0;background:linear-gradient(90deg,var(--ember),var(--lava));
+  transition:width 1.5s cubic-bezier(.16,1,.3,1);}
+.bar.hi .fill{background:linear-gradient(90deg,var(--lava),var(--lava-hot));box-shadow:0 0 10px rgba(232,90,34,.5);}
+.bar.lo .fill{background:linear-gradient(90deg,#3A241D,#7A5245);}
+
+footer{border-top:1px solid var(--edge);padding-block:clamp(3rem,6vw,5rem);}
+footer .fin{font-family:"Fraunces",serif;font-weight:700;font-size:var(--s-1);
+  max-width:40rem;margin:0 0 2.2rem;line-height:1.45;}
+footer .creds{display:flex;flex-wrap:wrap;gap:1.6rem;font-family:"DM Mono",monospace;
+  font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);}
+footer .creds b{color:var(--lava-hot);font-weight:500;}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+.rv.in{opacity:1;transform:none;}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition-duration:.01ms !important;}
+  .rv{opacity:1;transform:none;}
+}
+</style>
+
+<div id="vein"><span></span></div>
+
+<nav id="rail" aria-label="Navigation rapide">
+  <a href="#presentation"><span class="tip">Présentation</span><span class="dot"></span></a>
+  <a href="#identite"><span class="tip">Identité</span><span class="dot"></span></a>
+  <a href="#sommaire"><span class="tip">Sommaire</span><span class="dot"></span></a>
+  <a href="#histoire"><span class="tip">Histoire</span><span class="dot"></span></a>
+  <a href="#yoton"><span class="tip">Son art</span><span class="dot"></span></a>
+  <a href="#objectifs"><span class="tip">Objectifs</span><span class="dot"></span></a>
+  <a href="#mental"><span class="tip">Mental</span><span class="dot"></span></a>
+  <a href="#physique"><span class="tip">Physique</span><span class="dot"></span></a>
+</nav>
+
+<canvas id="embers" aria-hidden="true"></canvas>
+
+<header id="hero">
+  <div class="wrap hero-in">
+    <div>
+      <span class="label">Candidature — Shinoda RP · Iwagakure</span>
+
+      <h1 class="name" style="margin-top:1rem;">
+        <span class="a">SHINRA</span>
+        <span class="b">MOTORI</span>
+      </h1>
+
+      <div class="crack"></div>
+
+      <p class="hero-sub">
+        Douze ans, genin d'Iwagakure, né dans une famille de forgerons du clan Motori. Katon
+        solide, Yōton en cours d'apprentissage comme tous les jeunes du clan, et convaincu que le
+        village tient debout parce que des clans ont décidé un jour de <b>tenir ensemble</b>.
+      </p>
+
+      <div class="hero-meta">
+        <span class="chip">Iwagakure</span>
+        <span class="chip">Genin</span>
+        <span class="chip o">Clan Motori</span>
+        <span class="chip l">Katon</span>
+        <span class="chip l">Yōton</span>
+        <span class="chip">Forge</span>
+      </div>
+    </div>
+
+    <div class="fig hero-fig" role="img" aria-label="Shinra Motori"></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== 01 PRÉSENTATION ===== -->
+<section id="presentation" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">01</span>
+      <div><span class="label">Présentation</span><h2>Avant de commencer</h2></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="rv">
+        <p class="lede">
+          Shinra Motori a douze ans. Il est né à Iwagakure, dans le quartier du clan, au-dessus
+          d'une forge qui tourne depuis trois générations. Il est genin depuis quelques mois, il
+          maîtrise correctement le Katon pour son âge, et son Yōton — le kekkei genkai du clan,
+          l'art de la lave — est éveillé et progresse au rythme normal d'un enfant du clan.
+        </p>
+        <p style="margin-top:1.2rem;color:var(--body);">
+          Il est fier de son clan jusqu'à l'aveuglement, poli avec tout le monde, condescendant
+          sans s'en apercevoir, et persuadé d'être apprécié. C'est un enfant de la noblesse d'Iwa
+          qui n'a encore rien fait pour la mériter, et il le sait à peu près.
+        </p>
+        <p style="margin-top:1.2rem;color:var(--muted);">
+          La suite du dossier raconte son histoire dans l'ordre, puis détaille sa pratique du
+          Yōton, ses objectifs et ses caractéristiques.
+        </p>
+      </div>
+
+      <div class="plate rv">
+        <h3>Le joueur</h3>
+        <dl>
+          <div><dt>Pseudo Discord</dt><dd>hedyzz_bro</dd></div>
+          <div><dt>Pseudo Minecraft</dt><dd>Hedyzz_</dd></div>
+          <div><dt>Serveur</dt><dd>Shinoda RP</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 IDENTITÉ ===== -->
+<section id="identite" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">02</span>
+      <div><span class="label">État civil</span><h2>Carte d'identité</h2></div>
+    </div>
+
+    <dl class="id-grid rv">
+      <div class="id-cell"><dt>Prénom</dt><dd>Shinra</dd></div>
+      <div class="id-cell o"><dt>Nom</dt><dd>Motori<small>Branche forgeronne. Aucun siège au conseil des Doyens.</small></dd></div>
+      <div class="id-cell"><dt>Âge</dt><dd>12 ans</dd></div>
+      <div class="id-cell"><dt>Village</dt><dd>Iwagakure</dd></div>
+      <div class="id-cell"><dt>Grade</dt><dd>Genin</dd></div>
+      <div class="id-cell"><dt>Statut</dt><dd>Noble par naissance<small>Titre hérité, sans influence réelle. Il n'a rien décidé de sa vie.</small></dd></div>
+      <div class="id-cell l"><dt>Kekkei genkai</dt><dd>Yōton<small>Éveillé. Niveau attendu à son âge : altérations de surface et chaleur persistante.</small></dd></div>
+      <div class="id-cell l"><dt>Nature de chakra</dt><dd>Katon<small>Sa vraie capacité. Solide, rapide, bien tenue pour son grade.</small></dd></div>
+      <div class="id-cell"><dt>Métier</dt><dd>Forge<small>Formé à l'enclume avant l'Académie. Le seul endroit où il est patient.</small></dd></div>
+      <div class="id-cell"><dt>Brûlure rituelle</dt><dd>Aucune<small>Elle vient avec la maîtrise de l'art. Il y pense tous les jours.</small></dd></div>
+      <div class="id-cell"><dt>Divinité</dt><dd>Ishara<small>Celui qu'il prie. On lui répète qu'il est d'Anvyr. Ça le vexe.</small></dd></div>
+      <div class="id-cell"><dt>Instructeur</dt><dd>Ryōen Motori<small>Vieux forgeron du clan, une main perdue, chargé des enfants.</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ===== 03 SOMMAIRE ===== -->
+<section id="sommaire" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">03</span>
+      <div><span class="label">Table</span><h2>Sommaire</h2></div>
+    </div>
+
+    <nav class="toc rv" aria-label="Sommaire">
+      <a href="#ch1"><span class="n">I</span><span class="t">La maison au-dessus de la forge</span></a>
+      <a href="#ch2"><span class="n">II</span><span class="t">Ce qu'on lui a raconté</span></a>
+      <a href="#ch3"><span class="n">III</span><span class="t">Le feu vient vite</span></a>
+      <a href="#ch4"><span class="n">IV</span><span class="t">La pierre ne cède pas</span></a>
+      <a href="#ch5"><span class="n">V</span><span class="t">Les autres</span></a>
+      <a href="#ch6"><span class="n">VI</span><span class="t">La carrière, l'examen, la tache tiède</span></a>
+      <a href="#ch7"><span class="n">VII</span><span class="t">Aujourd'hui</span></a>
+      <a href="#yoton"><span class="n">05</span><span class="t">Son art — Katon et Yōton</span></a>
+      <a href="#objectifs"><span class="n">06</span><span class="t">Objectifs</span></a>
+      <a href="#mental"><span class="n">07</span><span class="t">Caractéristiques mentales</span></a>
+      <a href="#physique"><span class="n">08</span><span class="t">Caractéristiques physiques</span></a>
+    </nav>
+  </div>
+</section>
+
+<!-- ===== 04 HISTOIRE ===== -->
+<section id="histoire" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">04</span>
+      <div><span class="label">Sept chapitres</span><h2>Histoire</h2></div>
+    </div>
+  </div>
+
+  <div class="col">
+
+    <article class="chapter rv" id="ch1">
+      <div class="ch-head"><span class="ord">I</span><h3>La maison au-dessus de la forge</h3></div>
+      <p>
+        Shinra est né à Iwagakure, dans le quartier Motori, dans un logement collé à l'atelier
+        familial. Son père et son grand-père sont forgerons : ils reçoivent le minerai extrait par
+        les Bakuho et en font des pièces finies, ce que le clan considère depuis toujours comme la
+        partie noble du travail. La famille est respectée, bien payée, et n'a jamais eu la moindre
+        voix au conseil des Doyens.
+      </p>
+      <p>
+        Cette distinction, il l'a comprise très tôt sans qu'on la lui explique : il y a les Motori
+        qui décident et les Motori qui produisent, et sa famille est du deuxième côté. On le lui a
+        présenté comme une fierté. Il l'a pris comme telle pendant longtemps.
+      </p>
+      <p>
+        Il y a autre chose dans la maison dont personne ne parle. Sur les registres de la branche,
+        deux générations plus haut, un nom a été effacé. Pas raturé : effacé, proprement, comme le
+        clan sait le faire quand il prononce une <strong>disgrâce</strong>. Shinra a posé la
+        question deux fois. La première, son père a changé de sujet. La deuxième, sa grand-mère est
+        sortie de la pièce sans un mot.
+      </p>
+      <p>
+        Il a arrêté de demander à sept ans. Il y pense encore aujourd'hui. Officiellement, il
+        considère que la sanction était méritée, parce que c'est ce qu'on lui a appris. Ce n'est
+        pas tout à fait ce qu'il en pense.
+      </p>
+    </article>
+
+    <article class="chapter rv" id="ch2">
+      <div class="ch-head"><span class="ord">II</span><h3>Ce qu'on lui a raconté</h3></div>
+      <p>
+        Comme tous les enfants du clan, il a grandi avec l'histoire. Le Pays des Canyons de Lave,
+        la rivalité avec les Bakuho, et surtout <strong>Karyū Motori</strong>, chef du clan et
+        forgeron légendaire, acculé, qui déclencha l'éruption et détruisit le canyon avec des
+        centaines de combattants dedans.
+      </p>
+      <p>
+        On ne la lui a jamais racontée comme une tragédie. On la lui a racontée comme une preuve :
+        un Motori décide, même quand la décision coûte tout. À sept ans, il trouvait ça
+        magnifique. À douze, il trouve toujours ça magnifique, et il commence à peine à se dire
+        que les centaines de morts faisaient partie du prix.
+      </p>
+      <p>
+        Il a aussi tiré de cette histoire une conclusion que personne ne lui a soufflée. Après le
+        canyon, les Motori sont partis avec les <em>survivants Bakuho</em>, et c'est ensemble
+        qu'ils ont fondé Iwa. Donc, dans sa lecture, le village existe parce que des clans qui se
+        détestaient ont tenu ensemble. Il le répète tout le temps, à tout le monde, avec beaucoup
+        d'assurance. Ça met les adultes mal à l'aise, parce que ce n'est pas faux et que ce n'est
+        pas exactement ce qu'ils voulaient dire.
+      </p>
+      <p>
+        Côté religion, il a été élevé dans le culte des quatre Gardiens de la Fusion. On lui a
+        expliqué qu'une famille de forgerons appartient à <strong>Anvyr</strong>, dieu de la forge
+        et de la protection, celui de la patience et de la puissance contenue. Shinra prie
+        <strong>Ishara</strong>, dieu de la lave et de la guerre, parce qu'Ishara est nettement
+        plus intéressant. Ryōen lui a dit à neuf ans que les garçons qui prient Ishara finissent
+        presque toujours chez Anvyr. Il l'a très mal pris et il n'a pas changé.
+      </p>
+    </article>
+
+    <article class="chapter rv" id="ch3">
+      <div class="ch-head"><span class="ord">III</span><h3>Le feu vient vite</h3></div>
+      <p>
+        Le Katon est venu tôt et sans difficulté, vers huit ans. Il était en avance sur les autres
+        enfants Motori de son année, on le lui a dit, et ça lui est monté à la tête en une
+        semaine.
+      </p>
+      <p>
+        Il a passé les deux années suivantes à en faire trop. Il allumait des choses pour montrer
+        qu'il pouvait. Il a mis le feu à une réserve de charbon de bois dans la cour de l'atelier
+        en essayant une technique qu'il n'avait vue qu'une fois, et son père lui a interdit la
+        forge pendant un mois. C'est la punition la plus dure qu'il ait reçue, parce que la forge
+        est l'endroit qu'il préfère.
+      </p>
+      <p>
+        Car il y travaille depuis qu'il est en âge de tenir des pinces. Et à l'enclume, il est
+        méconnaissable. Son père lui a appris à attendre l'acier : à rester devant une barre sans
+        bouger, à regarder la couleur monter, à ne pas frapper trop tôt. Shinra peut faire ça
+        pendant des heures sans s'agacer.
+      </p>
+      <p>
+        Personne, à ce moment-là, n'a fait le rapprochement avec ce qui allait lui poser problème
+        très peu de temps après.
+      </p>
+    </article>
+
+    <article class="chapter rv" id="ch4">
+      <div class="ch-head"><span class="ord">IV</span><h3>La pierre prend son temps</h3></div>
+      <p>
+        Son Yōton s'est éveillé vers dix ans, dans les délais habituels pour un enfant du clan.
+      </p>
+      <p>
+        L'enseignement est clair et il le connaît par cœur. Le Yōton ne consiste pas à créer du
+        feu : il consiste à reconnaître l'instant où la pierre accepte de céder. La roche se
+        souvient de la chaleur qui l'a formée, et il suffit parfois de la rappeler à cet état.
+        C'est un art lent, pesant, qui se manifeste rarement par des torrents de lave et bien plus
+        souvent par une altération du sol, une trace figée, une chaleur qui reste.
+      </p>
+      <p>
+        Il progresse comme les autres de son année, et Ryōen le trouve tout à fait dans la norme.
+        Il obtient ce qu'un Motori de douze ans obtient : une dalle qui reste tiède une heure, une
+        surface qui se ramollit une seconde et se referme avec une autre texture, une empreinte de
+        main figée dans la roche.
+      </p>
+      <p>
+        Le problème n'est pas son niveau, c'est ce qu'il en attend. Il a grandi avec l'éruption de
+        Karyū et il s'imaginait autre chose. Chaque séance où la pierre ne coule pas, il la compte
+        comme une séance perdue, et il compense de la seule façon qu'il connaisse :
+        <strong>il pousse</strong>. Il force la durée, il force la quantité, il repart avec des
+        maux de tête et les mains qui tremblent, pour un résultat rigoureusement identique à celui
+        qu'il aurait eu en attendant.
+      </p>
+      <p>
+        Quand un cousin de son âge a produit un filet de lave gros comme le doigt, Shinra ne lui a
+        pas adressé la parole pendant deux semaines et a prétendu que ce n'était pas lié.
+      </p>
+      <p>
+        Ryōen lui répète la même chose depuis deux ans, et Shinra l'entend chaque fois comme une
+        excuse :
+      </p>
+      <blockquote>
+        « Tu sais attendre. Tu le fais tous les matins devant une barre d'acier. Le problème,
+        c'est que tu arrêtes d'attendre dès que tu sors de la forge. »
+        <cite>Ryōen Motori, instructeur de la branche</cite>
+      </blockquote>
+    </article>
+
+    <article class="chapter rv" id="ch5">
+      <div class="ch-head"><span class="ord">V</span><h3>Les autres</h3></div>
+      <p>
+        Il est entré à l'Académie à dix ans. Deux choses y ont compté plus que les cours.
+      </p>
+      <p>
+        La première s'appelle <strong>Ganta Bakuho</strong>. Même promotion, plus grand, plus
+        rapide, meilleur dans tous les exercices physiques, et pas particulièrement désagréable,
+        ce qui rend la chose insupportable. Shinra ne le lâche pas des yeux. C'est la seule
+        personne devant qui ses manières tombent complètement : avec Ganta, il est sec, il est
+        mauvais joueur, il cherche. Ganta le lui rend bien. Ils sont, sans jamais l'avoir dit,
+        assez proches d'être amis.
+      </p>
+      <p>
+        La seconde s'est passée un après-midi où son père l'a envoyé chercher une commande dans un
+        atelier <strong>Kurogane</strong>. Shinra y a vu un homme aveugle trier une caisse de
+        barres au toucher, vite, sans une erreur, et corriger un classement que son propre père
+        avait fait à l'œil quelques jours plus tôt. Il en a parlé pendant des semaines, à qui
+        voulait l'entendre.
+      </p>
+      <p>
+        Ça n'a rien changé à ce qu'il croit sur l'ordre des choses. Il a simplement remonté les
+        Kurogane dans un classement privé qu'il tient dans sa tête et dont il nierait l'existence.
+        Depuis, il les défend avec une véhémence qui surprend, y compris devant des Motori.
+      </p>
+      <p>
+        Pour le reste, il est aimable avec tout le monde et il y met du sien. Il aide, il prête,
+        il parle à ceux à qui personne ne parle. Il dit aussi des phrases comme « tu t'en sors
+        vraiment bien, pour quelqu'un de ta famille », sur un ton parfaitement chaleureux, et il
+        ne comprend jamais pourquoi la conversation s'arrête après. Il pense qu'il est apprécié.
+        Il est surtout toléré.
+      </p>
+      <p>
+        Quant au clan Jūgo, il répète mot pour mot ce qu'on lui a appris à la maison, avec une
+        assurance totale. Il n'en a jamais rencontré un seul.
+      </p>
+    </article>
+
+    <article class="chapter rv" id="ch6">
+      <div class="ch-head"><span class="ord">VI</span><h3>La carrière, l'examen, la tache tiède</h3></div>
+      <p>
+        L'épreuve pratique de sa session se déroulait dans une carrière désaffectée à l'est du
+        village : récupérer un objectif et le ramener en trinôme, dans un temps donné, avec des
+        instructeurs jouant l'opposition.
+      </p>
+      <p>
+        Son plan était bon. Il le savait, il l'a dit, et c'est exactement là que ça s'est gâté. Il
+        l'a donné comme un ordre, du ton qu'il a entendu toute son enfance chez les adultes de son
+        quartier, à deux candidats qui n'étaient pas Motori et qui n'avaient aucune raison de lui
+        obéir. Ils se sont braqués, ils ont discuté, ils ont perdu un quart d'heure. L'objectif a
+        été récupéré, tard et mal.
+      </p>
+      <p>
+        Coincé contre une paroi à la fin de l'exercice, il a voulu utiliser son Yōton pour ouvrir
+        le sol et bloquer le passage. Devant tout le monde. Il a poussé de toutes ses forces et il
+        ne s'est rien passé de visible : la pierre s'est ramollie une seconde sous ses mains, puis
+        elle s'est refermée, boursouflée et chaude. Un instructeur a noté « technique de rang
+        inférieur, sans effet tactique », ce qui est exactement ce qu'on attend d'un genin. Un
+        candidat a quand même ri.
+      </p>
+      <p>
+        Il a été reçu quand même. Son Katon et sa théorie l'ont porté, et l'objectif avait été
+        ramené. Le rapport tient en trois lignes : bon niveau en Katon, kekkei genkai
+        conforme au stade attendu, comportement en équipe à corriger.
+      </p>
+      <p>
+        Deux semaines plus tard, Ryōen est allé voir l'endroit. La pierre boursouflée était encore
+        tiède. Il est venu le dire à Shinra : que c'était exactement ça, la technique, qu'elle
+        avait fonctionné comme elle devait fonctionner, et que le seul problème était le public.
+      </p>
+      <p>
+        Shinra n'a pas encore décidé s'il le croyait.
+      </p>
+    </article>
+
+    <article class="chapter rv" id="ch7">
+      <div class="ch-head"><span class="ord">VII</span><h3>Aujourd'hui</h3></div>
+      <p>
+        Genin depuis quelques mois. Il passe encore à l'atelier tous les matins avant ses journées,
+        parce que son père l'exige et parce qu'il en a envie, ce qu'il n'admet qu'à moitié.
+      </p>
+      <p>
+        Son Katon progresse normalement. Son Yōton n'a pas bougé depuis l'examen. Il n'a pas de
+        brûlure rituelle, sa branche n'a toujours aucune voix au conseil, et le nom effacé est
+        toujours effacé. Il parle beaucoup de ce qu'il compte faire et il n'a encore rien fait.
+      </p>
+      <p>
+        Il est convaincu que ça va changer très vite. C'est de loin la chose la plus enfantine
+        chez lui, et c'est aussi ce qui le fait se lever le matin.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== 05 SON ART ===== -->
+<section id="yoton" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">05</span>
+      <div><span class="label">Capacités</span><h2>Son art — Katon et Yōton</h2></div>
+    </div>
+
+    <div class="arts">
+      <article class="art hot rv">
+        <h4>Katon</h4>
+        <span class="sub">Ce qu'il sait faire</span>
+        <p>
+          Sa véritable capacité de combat, et la seule fiable. Bases solides, allumage rapide,
+          bonne tenue de la flamme, portée courte à moyenne. Il s'en sert bien parce qu'il s'en
+          sert depuis cinq ans.
+        </p>
+        <p>
+          Sa limite est de tempérament plus que de technique : il enchaîne trop vite, il ne
+          s'économise pas, et il vide ses réserves en cherchant à impressionner.
+        </p>
+      </article>
+
+      <article class="art cold rv">
+        <h4>Yōton</h4>
+        <span class="sub">Où il en est</span>
+        <p>
+          Niveau normal pour son âge. Rien d'exploitable en combat pour l'instant, ce qui est la
+          règle à ce stade : l'art est lent par nature. Concrètement, il obtient :
+        </p>
+        <ul>
+          <li>une surface de pierre qui reste chaude une heure ou deux ;</li>
+          <li>un ramollissement d'un ou deux centimètres d'épaisseur, une seconde environ ;</li>
+          <li>une trace figée dans le sol, boursouflée, qui ne sert à rien mais qui reste.</li>
+        </ul>
+        <p style="margin-top:1rem;">
+          Chaque tentative coûte cher : maux de tête, tremblements, plusieurs heures inutilisable.
+          Il s'épuise surtout parce qu'il force pour aller plus vite que l'art ne le permet.
+        </p>
+      </article>
+
+      <article class="art rv">
+        <h4>L'enclume</h4>
+        <span class="sub">Là où la clé se trouve</span>
+        <p>
+          Devant une barre d'acier, il est capable d'attendre sans bouger que la couleur monte. Il
+          le fait depuis l'enfance, tous les matins, sans jamais s'impatienter.
+        </p>
+        <p>
+          C'est exactement la disposition que réclame le Yōton, et il n'a pas encore réussi à la
+          sortir de l'atelier. Toute sa progression tient à ce transfert-là.
+        </p>
+      </article>
+    </div>
+
+    <p class="creed rv">
+      « Le Yōton n'est pas un art de l'excès, mais de la patience et de ce qui demeure après que
+      tout a changé. »
+      <span>Enseignement du clan Motori</span>
+    </p>
+  </div>
+</section>
+
+<!-- ===== 06 OBJECTIFS ===== -->
+<section id="objectifs" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">06</span>
+      <div><span class="label">Ce qu'il veut</span><h2>Objectifs</h2></div>
+    </div>
+
+    <div class="horizons">
+      <div class="horizon rv">
+        <h3>À court terme<span>Maintenant</span></h3>
+        <ul class="goals">
+          <li><span class="mk"></span><div>
+            <b>Obtenir un résultat qu'il trouve enfin digne de ce nom</b>
+            <span class="desc">Son Yōton est dans la norme, mais rien de ce qu'il produit ne
+            ressemble à ce qu'il avait en tête. Il veut une démonstration visible, devant témoin,
+            de préférence devant un Motori.</span>
+          </div></li>
+          <li><span class="mk"></span><div>
+            <b>Battre Ganta Bakuho</b>
+            <span class="desc">Une fois. En combat d'entraînement. Il en parle plus souvent que
+            de sa carrière et il ne trouve pas ça ridicule.</span>
+          </div></li>
+          <li><span class="mk"></span><div>
+            <b>Se faire accepter dans une équipe</b>
+            <span class="desc">Objectif qu'il ne formule pas comme ça. Il dit plutôt qu'il
+            aimerait « tomber sur des gens sérieux », ce qui est déjà une bonne partie du
+            problème.</span>
+          </div></li>
+        </ul>
+      </div>
+
+      <div class="horizon rv">
+        <h3>À moyen terme<span>Les prochaines années</span></h3>
+        <ul class="goals">
+          <li><span class="mk"></span><div>
+            <b>Obtenir la brûlure rituelle</b>
+            <span class="desc">La marque que les volcans du Pays de la Terre laissent aux Motori
+            qui atteignent une vraie maîtrise de l'art. C'est son obsession la plus visible, et
+            il est extrêmement loin du compte.</span>
+          </div></li>
+          <li><span class="mk"></span><div>
+            <b>Savoir ce qui est arrivé au nom effacé</b>
+            <span class="desc">Deux générations plus haut, dans les registres de sa branche.
+            Personne ne lui répondra. Il compte y arriver quand même, et il n'a pas réfléchi une
+            seconde à ce qu'il ferait de la réponse.</span>
+          </div></li>
+          <li><span class="mk"></span><div>
+            <b>Rendre une voix à sa branche</b>
+            <span class="desc">Les forgerons produisent, les Doyens décident. Il trouve cette
+            répartition normale et il aimerait quand même que sa famille soit du bon côté.</span>
+          </div></li>
+        </ul>
+      </div>
+
+      <div class="horizon rv">
+        <h3>À long terme<span>Ce dont il parle trop tôt</span></h3>
+        <ul class="goals">
+          <li><span class="mk"></span><div>
+            <b>Devenir forgeron du clan</b>
+            <span class="desc">Pas chef, pas doyen : forgeron, comme Karyū Motori l'était avant
+            d'être autre chose. C'est sa véritable ambition et la seule dont il parle sans
+            arrogance.</span>
+          </div></li>
+          <li><span class="mk"></span><div>
+            <b>Défendre l'alliance fondatrice</b>
+            <span class="desc">Il croit sincèrement qu'Iwa tient parce que des clans ennemis ont
+            décidé de tenir ensemble, et il compte le rappeler à tout le monde, y compris à ceux
+            que ça arrange d'avoir oublié. Il n'a aucune idée de ce que ça implique.</span>
+          </div></li>
+          <li><span class="mk"></span><div>
+            <b>Ne jamais être effacé</b>
+            <span class="desc">Le seul objectif qu'il n'énonce jamais. Il a grandi avec un nom
+            manquant dans un registre et il ferait beaucoup de choses pour ne pas devenir le
+            deuxième.</span>
+          </div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 07 MENTAL ===== -->
+<section id="mental" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">07</span>
+      <div><span class="label">Caractère</span><h2>Caractéristiques mentales</h2></div>
+    </div>
+
+    <div class="two">
+      <div class="trait rv">
+        <p>
+          Shinra est <strong>chaleureux et hautain en même temps</strong>, sans voir la
+          contradiction. Il parle à tout le monde, il aide sans qu'on demande, il défend les gens
+          qu'on attaque. Il le fait du haut de quelque chose, et ça s'entend. Ses compliments
+          contiennent presque toujours une comparaison qui remet l'autre à sa place, et il est
+          sincèrement surpris quand ça se passe mal.
+        </p>
+        <p>
+          Il est fier de son clan jusqu'à l'aveuglement. L'éruption de Karyū, la disgrâce, la
+          hiérarchie : il défend tout, y compris ce qu'il n'a pas examiné. Sa seule idée
+          personnelle, c'est l'alliance fondatrice, et il y tient d'autant plus qu'elle est à lui.
+        </p>
+        <p>
+          Il tient énormément à sa tenue. Vêtements en ordre, cheveux recoiffés, dos droit. On lui
+          a appris que montrer une faiblesse est indigne de son rang, et il applique ça à la
+          lettre : il cache la fatigue, il cache la douleur, il minimise les blessures. Sur le
+          terrain, c'est un vrai risque pour son équipe et il n'en a pas conscience.
+        </p>
+      </div>
+
+      <div class="trait rv">
+        <p>
+          Il est <strong>impatient</strong>, et c'est le défaut qui lui coûte le plus. Son Yōton
+          progresse normalement, mais l'art demande d'attendre et lui veut des résultats tout de
+          suite : il pousse, il s'épuise, et il se croit en retard alors qu'il est exactement là
+          où il doit être. Il n'arrive pas à s'appliquer à lui-même ce qu'il fait sans effort à
+          la forge.
+        </p>
+        <p>
+          Il supporte très mal la critique et encore plus mal l'échec public. Il est mauvais
+          perdant, il boude, il trouve des explications extérieures. Quand un cousin réussit avant
+          lui, il coupe les ponts au lieu de demander comment.
+        </p>
+        <p>
+          Ce qui lui fait peur n'est pas la mort. C'est la <strong>disgrâce</strong> : la sanction
+          qui efface un Motori des registres du clan. Il a grandi avec un nom manquant dans sa
+          propre famille et personne n'a jamais voulu lui dire lequel. C'est la seule chose sur
+          laquelle il ne fait pas le fier.
+        </p>
+        <div class="tags">
+          <span class="tag">Fier</span>
+          <span class="tag">Chaleureux</span>
+          <span class="tag">Condescendant</span>
+          <span class="tag">Impatient</span>
+          <span class="tag">Mauvais perdant</span>
+          <span class="tag">Soucieux de sa tenue</span>
+          <span class="tag">Cache ses faiblesses</span>
+          <span class="tag">Loyal à Iwa</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 08 PHYSIQUE ===== -->
+<section id="physique" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">08</span>
+      <div><span class="label">Apparence</span><h2>Caractéristiques physiques</h2></div>
+    </div>
+
+    <div class="two">
+      <div class="fig-card rv">
+        <div class="fig" role="img" aria-label="Shinra Motori, rendu de son apparence"></div>
+        <span class="cap">Shinra Motori<br><b>12 ans — 1,52 m</b></span>
+      </div>
+
+      <div class="rv">
+        <div class="portrait">
+          <p>
+            Grand pour son âge, charpenté par le travail à la forge plus que par l'entraînement.
+            Peau <strong>mate</strong>, hâlée et un peu rougie sur les avant-bras par la chaleur
+            de l'atelier.
+          </p>
+          <p>
+            Cheveux <strong>bruns</strong>, épais, coupés courts sur la nuque et plus longs
+            devant. Il les recoiffe plusieurs fois par jour et s'en défend.
+          </p>
+          <p>
+            Yeux d'un <strong>rouge très sombre</strong>, presque noirs au premier regard, avec
+            un mouvement dans la pupille quand la lumière est basse — le trait de tous les Motori.
+            Le regard est direct, tenu, un peu long.
+          </p>
+          <p>
+            Mains marquées : cals d'enclume, brûlures anciennes de projections, ongles coupés
+            ras. Aucune <strong>brûlure rituelle</strong> sur le visage, ce qui se voit
+            immédiatement chez les siens et qu'il vit comme un manque.
+          </p>
+        </div>
+
+        <dl class="vitals">
+          <div><dt>Taille</dt><dd>1,52 m</dd></div>
+          <div><dt>Poids</dt><dd>43 kg</dd></div>
+          <div><dt>Groupe sanguin</dt><dd>A+</dd></div>
+          <div><dt>Main directrice</dt><dd>Droite</dd></div>
+          <div><dt>Marque rituelle</dt><dd>Aucune</dd></div>
+          <div><dt>Sommeil</dt><dd>Régulier, court</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="aptitudes rv">
+      <span class="label">Aptitudes</span>
+      <div class="bars" id="bars">
+        <div class="bar hi" data-v="74"><div class="top"><span class="n">Katon</span><span class="g">Solide pour son grade</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar" data-v="48"><div class="top"><span class="n">Yōton</span><span class="g">Normal pour son âge</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar hi" data-v="80"><div class="top"><span class="n">Travail du métal</span><span class="g">Très au-dessus de son âge</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar" data-v="72"><div class="top"><span class="n">Théorie et étiquette du clan</span><span class="g">Récitée par cœur</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar" data-v="60"><div class="top"><span class="n">Réserves de chakra</span><span class="g">Correctes, mal gérées</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar" data-v="52"><div class="top"><span class="n">Contrôle du chakra</span><span class="g">Moyen</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar" data-v="64"><div class="top"><span class="n">Force</span><span class="g">Bonne, héritée de la forge</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar" data-v="58"><div class="top"><span class="n">Taijutsu</span><span class="g">Dans la moyenne</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar lo" data-v="46"><div class="top"><span class="n">Vitesse et esquive</span><span class="g">Un peu lourd</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar" data-v="66"><div class="top"><span class="n">Endurance</span><span class="g">Bonne</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar lo" data-v="28"><div class="top"><span class="n">Travail en équipe</span><span class="g">Problématique</span></div><div class="track"><div class="fill"></div></div></div>
+        <div class="bar lo" data-v="22"><div class="top"><span class="n">Patience hors de la forge</span><span class="g">Inexistante</span></div><div class="track"><div class="fill"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fin">« Un Motori décide, même quand la décision coûte tout. »</p>
+    <div class="creds">
+      <span>Discord <b>hedyzz_bro</b></span>
+      <span>Minecraft <b>Hedyzz_</b></span>
+      <span>Shinoda RP — Iwagakure — Clan Motori</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* braises montantes */
+  var cv = document.getElementById("embers");
+  if (cv && !reduced) {
+    var ctx = cv.getContext("2d");
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var p = [], W = 0, H = 0;
+    function size(){
+      W = window.innerWidth; H = window.innerHeight;
+      cv.width = W*dpr; cv.height = H*dpr;
+      cv.style.width = W+"px"; cv.style.height = H+"px";
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    function seed(){
+      p = [];
+      var n = Math.min(58, Math.round(W*H/28000));
+      for (var i=0;i<n;i++){
+        var hot = Math.random() < 0.22;
+        p.push({x:Math.random()*W, y:Math.random()*H, r:hot?1.3+Math.random()*1.1:0.5+Math.random()*0.9,
+                vy:-(0.09+Math.random()*0.3), vx:(Math.random()-0.5)*0.14,
+                a:0.16+Math.random()*0.42, ph:Math.random()*6.28, sp:0.006+Math.random()*0.016, hot:hot});
+      }
+    }
+    function frame(){
+      ctx.clearRect(0,0,W,H);
+      for (var i=0;i<p.length;i++){
+        var m = p[i];
+        m.ph += m.sp; m.y += m.vy; m.x += m.vx + Math.sin(m.ph)*0.15;
+        if (m.y < -12){ m.y = H+12; m.x = Math.random()*W; }
+        if (m.x < -12) m.x = W+12; if (m.x > W+12) m.x = -12;
+        var al = m.a*(0.5+0.5*Math.sin(m.ph*1.5));
+        if (m.hot){
+          var g = ctx.createRadialGradient(m.x,m.y,0,m.x,m.y,m.r*8);
+          g.addColorStop(0,"rgba(255,163,71,"+(al*0.75)+")");
+          g.addColorStop(1,"rgba(232,90,34,0)");
+          ctx.fillStyle=g; ctx.beginPath(); ctx.arc(m.x,m.y,m.r*8,0,6.2832); ctx.fill();
+        }
+        ctx.fillStyle = m.hot ? "rgba(255,192,130,"+al+")" : "rgba(215,110,58,"+(al*0.7)+")";
+        ctx.beginPath(); ctx.arc(m.x,m.y,m.r,0,6.2832); ctx.fill();
+      }
+      requestAnimationFrame(frame);
+    }
+    size(); seed(); frame();
+    var to; window.addEventListener("resize", function(){ clearTimeout(to); to=setTimeout(function(){size();seed();},180); });
+  }
+
+  var rvs = document.querySelectorAll(".rv");
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, {threshold:0.12, rootMargin:"0px 0px -8% 0px"});
+    rvs.forEach(function(el){ io.observe(el); });
+  } else { rvs.forEach(function(el){ el.classList.add("in"); }); }
+
+  var block = document.getElementById("bars");
+  function fill(){
+    block.querySelectorAll(".bar").forEach(function(r,i){
+      var v = r.getAttribute("data-v");
+      setTimeout(function(){ r.querySelector(".fill").style.width = v+"%"; }, reduced?0:i*70);
+    });
+  }
+  if (block){
+    if ("IntersectionObserver" in window){
+      var io2 = new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ fill(); io2.disconnect(); } });
+      }, {threshold:0.2});
+      io2.observe(block);
+    } else { fill(); }
+  }
+
+  var vein = document.querySelector("#vein span");
+  var rail = document.getElementById("rail");
+  var links = rail ? Array.prototype.slice.call(rail.querySelectorAll("a")) : [];
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute("href")); });
+  var hero = document.getElementById("hero");
+  var ticking = false;
+
+  function onScroll(){
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    vein.style.height = (max>0 ? (window.scrollY/max)*100 : 0) + "%";
+    if (rail && hero){
+      if (window.scrollY > hero.offsetHeight*0.6) rail.classList.add("on");
+      else rail.classList.remove("on");
+    }
+    var mid = window.scrollY + window.innerHeight*0.4, act = -1;
+    for (var i=0;i<targets.length;i++){ if (targets[i] && targets[i].offsetTop <= mid) act = i; }
+    links.forEach(function(a,i){ a.classList.toggle("active", i===act); });
+    ticking = false;
+  }
+  window.addEventListener("scroll", function(){ if(!ticking){ ticking=true; requestAnimationFrame(onScroll); } }, {passive:true});
+  onScroll();
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(ev){
+      var el = document.querySelector(a.getAttribute("href"));
+      if (!el) return;
+      ev.preventDefault();
+      el.scrollIntoView({behavior: reduced?"auto":"smooth", block:"start"});
+    });
+  });
+})();
+</script>
